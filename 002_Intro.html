@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            background-color:thistle;}
+        #button1 {
+            margin-left: 160px;
+            margin-top: 50px;
+            width: 84px;
+            height: 45px;   
+            background: transparent;
+            border: none;
+            color: white;   
+            font-size:20px;
+            font-weight:700;            
+}
+#button2 {
+            margin-left: 160px;
+            margin-top: 50px;
+            width: 84px;
+            height: 45px;   
+            background: transparent;
+            border: none;
+            color: brown;   
+            font-size:20px;
+            font-weight:700;            
+}
+        #namefunc {
+            margin-left: 50px;
+            margin-top: 100px;
+            width: 400px;
+            height: 45px;   
+            border: none;
+            font-size:20px;
+            font-weight:700;  
+        }
+        
+        #cat {
+            margin-left: 110px;
+            width: 200px;
+            height: 150px;   
+        }
+
+    </style>
+
+
+    <script src="./js/002_Variable.js">
+        // javascript 파일 로드
+        // console 확인 단축키: shift+ctrl+i
+        // // 한 줄 주석
+        // /* 여러 줄 주석 */ 
+
+        // - JS: 프로그래밍 언어
+        // - HTML: 홈페이지 뼈대, 디자인 언어
+        // - CSS: 디자인 부분 서포트, 디자인 언어
+        // - Javascript: EVENT 서포트, 인터프리터 방식
+        // - Python은 컴파일러 방식이라면, JAVASCRIPT는 인터프리터 방식: 단점은 에러 잡기 어렵고 불친절
+
+    </script>    
+    
+</head>
+
+
+<body>
+    <h2 id=namefunc style="color: blueviolet;" ondblclick="name()" style="font: small-caps;">
+        <!-- on으로 javascript에 연결 -->
+        <!-- 이때, method는 함수이므로 ()써워야 함! -->
+        더블 클릭시,
+        name function 작동!
+    </h2>
+
+    <div id=cat>
+        <img src="img/cat1.jpg" width="200" height="150" onclick="cat()">
+        <script>
+            function cat(){
+                alert("애요오오오오옹!")
+            }
+        </script>
+    </div> 
+
+    <div>
+        <input type="button" id="button1" onclick="button1_click()" value="Click!">
+    </div>   
+
+    <div>
+        <input type="button" id="button2" onclick="alert('수업 끝!')" value="눌러!">
+    </div>
+
+</body>
+
+</html>
