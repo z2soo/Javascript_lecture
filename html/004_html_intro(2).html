@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. 이미지 띄우기 -->
+    <!-- 사이즈 조정시, 비율 유지 원하면 width만 설정 -->
+    <img src="/img/cat1.jpg" width="150px"><br>
+
+    <!-- 2. 동영상 띄우기 -->
+    <!-- 옵션 주려면 video 태그, 간단한 것은 embed 태그 -->
+    <!-- 이미지 비디오 외 자료는 embed 사용 -->
+    <video src="/img/woo.mp4" width="300px" autoplay controls loop>우상우</video><br>
+    <embed src="/img/woo.mp4"><br><br>
+</body>
+
+<body>
+    <!-- 3. 테이블 생성 -->
+    <table border="3" width="500" height="300">
+        <thead>
+            <td align="center">음식 </td> <td>장소</td> 
+        </thead>
+        <tr>
+            <!-- colspan: 행 병합 -->
+            <td align="right" colspan="2">치킨</td> 
+        </tr>
+        <tr>
+            <!-- rowspan: 열 병합 -->
+            <td rowspan="2">족발</td> <td>장충동</td>
+        </tr>
+        <tfoot>
+            <td>??</td><td>??</td>
+        </tfoot>
+    </table>
+</body>
+</html>

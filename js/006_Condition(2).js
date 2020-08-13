@@ -1,33 +1,5 @@
 "use strict";
 
-/* <1. 조건문>
-    if (conditions){
-         만족시 이 범위 실행
-    } else {
-        아니면 이 범위 실행
-    }
-*/
-
-
-// 나이가 70 이상이면 '안녕하십니까'
-let age = 70;
-if (age>=70) {
-    console.log('안녕하십니까');
-} else {
-    console.log('안녕')
-};
-
-
-// 아이가 1살이 넘고 5살 미만이면 ㅎ0ㅎ
-// 아니면 ;0;
-let child = {age:3, height : 100};
-if (1<child.age<5) {
-    console.log('ㅎ0ㅎ');
-} else {
-    console.log(';0;')
-}
-
-
 if (true) {
     console.log('true');
 }
@@ -154,8 +126,19 @@ let pw = 123;
 
 /*
     test
-    id 틀리면 'id error'
-    pw 틀리면 'pw error'
+    id 틀리면 'id error' 출력
+    pw 틀리면 'pw error' 출력
 
-    둘다 맞으면 로그인 성공
+    둘다 맞으면 '로그인 성공' 출력
 */
+
+if (id == 'mz') {
+
+    if (pw == 123) {
+    console.log('성공');
+    } else{
+    console.log('pw error');
+    } 
+} else{
+    console.log('id error');
+    }

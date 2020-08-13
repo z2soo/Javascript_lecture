@@ -8,7 +8,7 @@
         body{ 
             background-color:thistle;}
         #button1 {
-            margin-left: 160px;
+            margin-left: 60px;
             margin-top: 50px;
             width: 84px;
             height: 45px;   
@@ -18,10 +18,10 @@
             font-size:20px;
             font-weight:700;            
 }
-#button2 {
+        #button2 {
             margin-left: 160px;
             margin-top: 50px;
-            width: 84px;
+            width: 120px;
             height: 45px;   
             background: transparent;
             border: none;
@@ -45,10 +45,15 @@
             height: 150px;   
         }
 
+        #input1 {
+            margin-left: 160px;
+            margin-top: 80px;
+            width: 100px;
+        }
     </style>
 
 
-    <script src="./js/007_Repeat.js">
+    <script src="./js/010_Function.js">
         // javascript 파일 로드
         // console 확인 단축키: shift+ctrl+i
         // // 한 줄 주석
@@ -75,21 +80,32 @@
 
     <div id=cat>
         <img src="img/cat1.jpg" width="200" height="150" onclick="cat()">
-        <script>
-            function cat(){
-                alert("애요오오오오옹!")
-            }
-        </script>
-    </div> 
-
-    <div>
-        <input type="button" id="button1" onclick="button1_click()" value="Click!">
+        <button onclick="button1_click()" id="button1">Click!</button>
+        <!-- <input type="button" id="button1" onclick="button1_click()" value="Click!"> -->
     </div>   
 
     <div>
-        <input type="button" id="button2" onclick="alert('수업 끝!')" value="눌러!">
+        <!-- 값을 전송할 때 사용 -->
+        <form name="f" onsubmit="return myFunc()"><br>
+            <input id="input1" name="inputHere"><br>
+            <!-- <button id="button2">구구단 시작</button> -->
+            <button id="button2" 
+                    onclick=" style='color:red;' 
+                              document.getElementById('input1').style.backgroundColor='orange';
+                              ">구구단 시작</button>
+        </form>    
     </div>
 
+    <div>
+        <button style = margin-left:168px;
+                onclick=" print3dan();
+                          this.style.backgroundColor='black';
+                          this.style.color='white';
+                ">
+            빨리 눌러 빨리
+        </button>
+    </div>
+    
 </body>
 
 </html>
